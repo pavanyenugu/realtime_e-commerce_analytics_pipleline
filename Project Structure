@@ -1,0 +1,22 @@
+real-time-ecommerce-analytics/
+│── data/                      # Sample mock data
+│   ├── orders.json
+│
+│── kafka_producer/            # Sends e-commerce events into Kafka
+│   └── producer.py
+│
+│── spark_streaming/           # Spark job consuming Kafka + processing
+│   └── spark_stream.py
+│
+│── airflow_dag/               # Orchestration DAG
+│   └── ecommerce_dag.py
+│
+│── monitoring/                # Prometheus + Grafana configs
+│   ├── prometheus.yml
+│   └── grafana_dashboard.json
+│
+│── redshift/                  # SQL for table setup
+│   └── create_tables.sql
+│
+│── requirements.txt           # Python dependencies
+│── README.md                  # Documentation
